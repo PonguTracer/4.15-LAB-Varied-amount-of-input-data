@@ -13,11 +13,11 @@ public class LabProgram {
             if (number < 0) {
                 break; // Stop if the number is negative
             }
-            max = Math.max(max, number);
-            sum += number;
-            count++;
+            max = Math.max(max, number); // Update max if the current number is larger
+            sum += number;               // Add the current number to sum
+            count++;                     // Increment the count of numbers
         }
-        double average = (double) sum / count;
+        double average = (double) sum / count; // Calculate the average
         System.out.println(max + " " + String.format("%.2f", average));
    }
 }
